@@ -6,50 +6,46 @@ Stable tag:        0.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Example block scaffolded with Create Block tool.
+
 
 == Description ==
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+Kanopi Blocks plugin – Custom Gutenberg blocks (Hero, Testimonials, ), SCSS-based, animations, React using block.js and edit.js.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+
 
 == Installation ==
 
 This section describes how to install the plugin and get it working.
 
-e.g.
 
-1. Upload the plugin files to the `/wp-content/plugins/kanopi-blocks` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+== Requirements ==
+
+WordPress 6.0+
+
+PHP 7.4+
+
+MySQL 5.7+
+
+Node.js & npm: required if building or managing plugin assets
 
 
-== Frequently Asked Questions ==
+== Installation Steps ==
 
-= A question that someone might have =
+Upload Plugin:
 
-An answer to that question.
+Copy the kanopi-blocks folder into wp-content/plugins/.
 
-= What about foo bar? =
+cd wp-content/plugins/kanopi-blocks
+npm install  (This will install all dependencies listed in package.json.) 
 
-Answer to foo bar dilemma.
+Go to your WordPress Admin → Plugins → Installed Plugins.
 
-== Screenshots ==
+Find Kanopi Blocks and click Activate.
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
 
-== Changelog ==
+== Plugin Features ==
 
-= 0.1.0 =
-* Release
+Hero Block: Editable heading/subheading,image,buttons with live preview.
 
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
+Testimonials Block: Add, Edit, remove, and reorder testimonial items with live preview.
