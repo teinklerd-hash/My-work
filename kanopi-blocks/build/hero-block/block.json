@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kanopi/hero-block",
+  "version": "0.1.0",
+  "title": "Hero Block",
+  "category": "widgets",
+  "icon": "align-wide",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": true,
+    "alignWide": true
+  },
+  "textdomain": "hero-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": "h2",
+      "default": "Welcome to Our Awesome Site!"
+    },
+    "description": {
+      "type": "string",
+      "source": "html",
+      "selector": "p",
+      "default": "Discover amazing things and explore our features."
+    },
+    "imageUrl": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".hero-block__image img",
+      "attribute": "src",
+      "default": ""
+    },
+    "buttonText": {
+      "type": "string",
+      "source": "html",
+      "selector": ".hero-block__btn-primary:first-of-type",
+      "default": "Learn More"
+    },
+    "buttonLink": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".hero-block__buttons .wp-block-button:nth-child(1) .hero-block__btn-primary.wp-block-button__link",
+      "attribute": "href",
+      "default": "#"
+    },
+    "buttonText2": {
+      "type": "string",
+      "source": "html",
+      "selector": ".hero-block__buttons .wp-block-button:nth-child(2) .hero-block__btn-primary.wp-block-button__link",
+      "default": "Contact Us"
+    },
+    "buttonLink2": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".hero-block__buttons .wp-block-button:nth-child(2) .hero-block__btn-primary.wp-block-button__link",
+      "attribute": "href",
+      "default": "#"
+    }
+  },
+  "viewScript": "file:./view.js"
+}

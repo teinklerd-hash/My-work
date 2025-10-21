@@ -1,0 +1,68 @@
+.kanopi-testimonials-block {
+	padding:40px 24px;
+	&__title,&__subtitle{
+		text-align: center;
+	}
+	&__subtitle{
+		font-size:24px;
+		line-height: 36px;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	&__grid{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		margin-top: 40px;
+		.kanopi-speciality-item{
+			width: calc(33.33% - 60px);
+			background-color: #f7f7fb;
+			padding:40px 20px;
+			border-radius:10px;
+			&__icon{
+				.dashicon{
+					font-size:60px;
+					line-height: 60px;
+					color: var(--wp--preset--color--primary);
+					display: inline-block;
+					height: auto;
+					width: auto;
+				}
+			}
+			p{
+				margin-bottom: 0px;
+			}
+		}
+	}
+}
+
+
+
+@media only screen and (max-width:1199px) {
+	.kanopi-testimonials-block{
+		&__grid{
+			.kanopi-speciality-item{
+				width: calc(50% - 55px);
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width:680px) {
+.kanopi-testimonials-block{
+		&__subtitle{
+			font-size: 20px;
+			line-height: 30px;
+		}
+		&__grid{
+			.kanopi-speciality-item{
+				width: 100%;
+				text-align: center;
+				&__icon{
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

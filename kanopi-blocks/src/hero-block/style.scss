@@ -1,0 +1,57 @@
+.hero-block {
+  padding: 80px 24px;
+  background: #f7f7fb;
+  font-family: 'Poppins', sans-serif;
+
+  &__container {
+     max-width: var(--wp--style--global--content-size, 800px);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+   &__image, &__content{
+	max-width:50%;
+	width: 100%;
+   }
+
+  &__image img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+
+  &__content {
+    max-width: 600px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .hero-block__container {
+    flex-direction: column;
+    text-align: center;
+    .hero-block__image, .hero-block__content{
+      max-width: 100%;
+    }
+    .hero-block__image{
+      img{
+        max-width: 350px;
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+    .hero-block__buttons{
+      justify-content: center;
+    }
+  }
+}

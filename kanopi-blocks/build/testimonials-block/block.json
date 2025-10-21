@@ -1,0 +1,76 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kanopi/testimonials-block",
+  "version": "0.1.0",
+  "title": "Testimonials Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "text": true,
+      "background": true,
+      "link": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Testimonials"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,\nnon nisl tincidunt ut elementum turpis."
+    },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "icon": "format-quote",
+          "itemTitle": "Title",
+          "itemDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non nisl tincidunt ut elementum turpis."
+        },
+        {
+          "icon": "format-quote",
+          "itemTitle": "Title",
+          "itemDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non nisl tincidunt ut elementum turpis."
+        },
+        {
+          "icon": "format-quote",
+          "itemTitle": "Title",
+          "itemDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non nisl tincidunt ut elementum turpis."
+        }
+      ],
+      "items": {
+        "type": "object",
+        "properties": {
+          "icon": {
+            "type": "string"
+          },
+          "itemTitle": {
+            "type": "string"
+          },
+          "itemDescription": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "textdomain": "testimonials-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
