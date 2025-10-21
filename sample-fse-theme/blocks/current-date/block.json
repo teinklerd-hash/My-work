@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "sample-fse-theme/current-date",
+  "title": "Current Date",
+  "category": "widgets",
+  "icon": "calendar",
+  "description": "Displays the current date dynamically.",
+  "supports": {
+    "html": false
+  },
+  "render": "file:./index.php"
+}

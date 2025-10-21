@@ -1,0 +1,84 @@
+.custom-header{
+    .wp-block-navigation{
+        .wp-block-navigation-item{
+            a{
+                text-decoration: none;
+                font-weight:600;
+                color: var(--wp--preset--color--primary);
+                &:hover{
+                    color:var(--wp--preset--color--secondary);
+                }
+            }
+            &.current-menu-item a,
+            &.current-menu-ancestor a,
+            &.current_page_item a {
+                color: var(--wp--preset--color--secondary);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .site-header{
+        .wp-block-site-logo{
+            img{
+                max-width: 200px;
+            }
+        }
+        .wp-block-navigation__responsive-container-open {
+            position: relative;
+            width: 32px;
+            height: 22px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            svg {
+                display: none;
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-color:var(--wp--preset--color--primary); // Change to your desired color
+                border-radius: 2px;
+                transition: all 0.3s ease;
+            }
+
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+
+            &::before {
+                box-shadow: 0 10px 0 0 var(--wp--preset--color--primary); // Middle line
+            }
+        }
+
+        .wp-block-navigation__responsive-container-close {
+            position: fixed;     
+            top: 16px;      
+            right: 16px;           
+            width: 30px;      
+            height: 30px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 9999;
+
+            svg {
+                width: 100%;        
+                height: 100%;
+            }
+        }
+    }
+
+}

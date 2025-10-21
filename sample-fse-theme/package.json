@@ -1,0 +1,17 @@
+{
+  "name": "sample-fse-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "sass": "npx sass assets/scss/main.scss assets/css/main.css --watch",
+  "build:sass": "npx sass assets/scss/main.scss assets/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.26.0",
+    "sass": "^1.93.2"
+  }
+}
