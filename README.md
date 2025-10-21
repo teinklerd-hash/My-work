@@ -75,3 +75,15 @@ Clear browser or plugin cache if you don’t see changes.
 Check block layouts in the editor to verify correct display.
 
 Adjust any fonts, colors, or settings via the WordPress Editor if needed.
+
+=================================================== 
+
+Improvements with More Time:
+
+Add more reusable dynamic blocks and global block settings.
+
+Implement unit and integration testing for blocks.
+
+Optimize animations for performance across all devices.
+
+Add full accessibility compliance (WCAG 2.1) to all blocks.
