@@ -2,9 +2,9 @@ Overview
 
 This package includes:
 
-Kanopi Blocks plugin – Custom Gutenberg blocks (Hero, Testimonials, ), SCSS-based, animations, React using block.js and edit.js.
+Kanopi Blocks plugin – Custom Gutenberg blocks (Hero, Testimonials), SCSS-based, animations, React using block.js and edit.js.
 
-Custom Theme / Templates – Includes home-page.html,current-date block,PHP customizations and other template files used for full-site editing.
+Custom Theme / Templates – Includes home-page.html,current-date block, PHP customizations, and other template files used for full-site editing.
 
 
 =============================
